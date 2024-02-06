@@ -21,6 +21,7 @@ header {
     border-radius: 8px;
     border-style: solid;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    overflow: auto;
 
 }
 
@@ -53,18 +54,18 @@ table {
     width: 100%;
 }
 
-.images {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.images .image {
-    flex: 1;
-    margin: 10px;
-}
-
-.images .image img {
-    width: 100%;
+.context img {
+    width: 300px;
     height: auto;
+}
+
+.context .left {
+    float: left;
+    margin-right: 20px;
+
+}
+
+.context .right {
+    float: right;
+    margin-left: 20px;
 }
