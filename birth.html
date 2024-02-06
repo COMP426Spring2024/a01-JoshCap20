@@ -13,6 +13,134 @@
     <header>
         <h1>The Birth Story of Zeus</h1>
     </header>
+    <div class="context">
+        <a href="index.html">Back to Home</a>
+    </div>
+    <div class="context">
+        <h2>Birth</h2>
+        <p>
+            According to myth, Zeus was the last of the six children born to the Titans Cronus and Rhea. He came into being
+            at a chaotic and uncertain time: Cronus had just seized control of the heavens from his father Uranus, one of
+            the primordial deities and the overlord of the sky.
+    
+            Fearing that his own children would usurp him (just as he had his father), Cronus ate his first five
+            children—Hestia, Demeter, Hera, Hades, and Poseidon. Determined to save her next child, Rhea stole away while
+            she was pregnant with Zeus and delivered him in secret.
+    
+            Rhea entrusted the child to her mother Gaia, the primordial goddess of the earth, who hid him in a cave. To
+            complete this deception, Rhea returned with a stone wrapped in swaddling blankets and gave it to Cronus, who
+            devoured it as he had the others. The ruse was thus a success.
+    
+            In the most familiar version of the myth, Zeus was born on the island of Crete, but ancient sources often
+            disagreed on the exact location of the cave in which he was hidden. According to Hesiod, Zeus was raised on
+            Mount Aegaeon, near the Cretan city of Lyctus, but in other accounts he was raised on Mount Dicte or Mount Ida.
+        </p>
+    </div>
+    <div class="context">
+        <h2>Infancy</h2>
+        <p>
+            There are different versions of Zeus’ infancy. In the best-known tradition, he was suckled by the she-goat
+            Amalthea while a troop of armed warriors called the Curetes danced and clashed their weapons to conceal the
+            baby’s cries from Cronus.
+    
+            But there were numerous variations on this tradition. In one version, Rhea entrusted Zeus to her sister Themis
+            rather than Gaia, and Themis in turn entrusted Zeus to a nymph named Amalthea, whose goat it was that nursed the
+            infant.
+    
+            In another variant, Zeus was nursed by the daughters of a certain Melisseus (named as Adrasteia and Ida in some
+            sources). In still other traditions, Zeus was fed by various other animals, such as bees or a sow.
+    
+            Another story told of how Amalthea—a nymph in this tradition—devised a cunning plan to prevent Cronus from
+            finding Zeus. Since Cronus ruled the earth, the heavens, and the sea, Amalthea hid the young Zeus by hanging his
+            cradle from a tree: suspended between the three realms, Zeus was invisible to Cronus.
+    
+            Zeus’ childhood is conveyed through a number of colorful myths. In one, a band of Cretan bandits snuck into
+            Zeus’ cave to steal the honey of the sacred bees that fed the young god. Zeus caught them and used his power to
+            split their armor. He would have killed them, too, but Themis and the Moirae reminded him that it was forbidden
+            for anyone to die on sacred ground. Zeus thus changed them into birds instead.
+    
+            In another myth, Cronus came to Crete in search of Zeus, but Zeus outwitted his father by transforming himself
+            into a snake and his nurses into bears. This act of deception was commemorated in the constellations of the
+            Dragon and the Greater and Lesser Bear. Alternatively, Zeus was spirited away to Naxos when Cronus came to
+            Crete and spent the rest of his childhood there.
+        </p>
+    </div>
+    <div class="context">
+        <h2>Family</h2>
+        <table>
+            <tr>
+                <th>Parents</th>
+                <th>Siblings</th>
+            </tr>
+            <tr>
+                <td>Cronus</td>
+                <td>Hestia</td>
+            </tr>
+            <tr>
+                <td>Rhea</td>
+                <td>Hades</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Hera</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Poseidon</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Demeter</td>
+            </tr>
+        </table>
+        <label for="family">Learn more: </label>
+        <select name="family" id="family">
+            <option value="Cronus">Cronus</option>
+            <option value="Rhea">Rhea</option>
+            <option value="Hestia">Hestia</option>
+            <option value="Hades">Hades</option>
+            <option value="Hera">Hera</option>
+            <option value="Poseidon">Poseidon</option>
+            <option value="Demeter">Demeter</option>
+        </select>
+        <p id="familyInfo">In Ancient Greek religion and mythology, Cronus, Cronos, or Kronos was the leader and youngest of
+            the first generation of Titans, the divine descendants of the primordial Gaia and Uranus. He overthrew his
+            father and ruled during the mythological Golden Age, until he was overthrown by his own son Zeus and imprisoned
+            in Tartarus. </p>
+    </div>
+    <div class="context">
+        <h2>Origins</h2>
+        <ul>
+            <li>Ancient Greek Religion</li>
+            <li>Mycenaean Greece, Mycenaean Religion and Mycenaean Deities</li>
+            <li>Minoan Civilization, Minoan Religion</li>
+            <li>Classical Greece</li>
+            <li>Hellenistic Greece, Hellenistic Religion</li>
+        </ul>
+    </div>
+    <script>
+        document.getElementById("family").addEventListener("change", function () {
+            var family = document.getElementById("family").value;
+            var familyInfo = document.getElementById("familyInfo");
+            var description = "";
+            if (family == "Cronus") {
+                description = "In Ancient Greek religion and mythology, Cronus, Cronos, or Kronos was the leader and youngest of the first generation of Titans, the divine descendants of the primordial Gaia and Uranus. He overthrew his father and ruled during the mythological Golden Age, until he was overthrown by his own son Zeus and imprisoned in Tartarus.";
+            } else if (family == "Rhea") {
+                description = "Rhea was the Titaness daughter of the earth goddess Gaia and the sky god Uranus. She was known as the mother of the Olympian gods and goddesses, but not as an Olympian goddess in her own right. The classical Greeks saw her as the mother of the Olympian goddesses and gods, but not as an Olympian goddess in her own right.";
+            } else if (family == "Hestia") {
+                description = "Hestia is the virgin goddess of the hearth, architecture, and the right ordering of domesticity, the family, the home, and the state. In Greek mythology, she is a daughter of Cronus and Rhea.";
+            } else if (family == "Hades") {
+                description = "Hades was the ancient Greek god of the dead and the king of the underworld. He was the eldest son of Cronus and Rhea and the elder brother of Zeus, Poseidon, Demeter, Hera, and Hestia.";
+            } else if (family == "Hera") {
+                description = "Her Roman equivalent is Juno. She is the daughter of the Titans Cronus and Rhea. Hera is married to her brother Zeus and is titled as the Queen of Heaven. One of her characteristics is her jealous and vengeful nature against Zeus's other lovers and offspring and against the mortals who cross her.";
+            } else if (family == "Poseidon") {
+                description = "Poseidon was one of the Twelve Olympians in ancient Greek religion and myth, god of the sea, storms, earthquakes, and horses. In pre-Olympian Bronze Age Greece, he was venerated as a chief deity at Pylos and Thebes.";
+            } else if (family == "Demeter") {
+                description = "Demeter is the goddess of the harvest and agriculture, who presided over grains and the fertility of the earth. Her cult titles include Sito, 'she of the Grain', as the giver of food or grain, and Thesmophoros, 'Law - Bringer', as a mark of the civilized existence of agricultural society.";
+            }
+            familyInfo.innerHTML = description;
+        });
+    </script>
 </body>
 
 </html>
