@@ -12,7 +12,7 @@ These pages should describe a mythological character or mythological story. The 
 The only real requirements for this assignment are these:
 
 1. There should be a single logical "starting" web page as index.html.
-2. There should be at least 3 pages. There is no maximum limit of pages, but don't go crazy.
+2. There should be at least 3 pages (your `index.html` page + 2 others). There is no maximum limit of pages, but don't go crazy.
 3. There should be links that navigate between the pages
 4. All of the pages should use the same CSS stylesheet
 5. All of the pages, stylesheets, images, or other resources are commited to this repository.
@@ -26,7 +26,7 @@ At a minimum, you HTML pages should have at least one of **each** of the followi
 1. `<ul>` or `<ol>`.
 2. `<table>` .
 3. `<img> `.
-4. `<selector>`.
+4. `<select>`.
 5. `<a>`.
 
 In addition to that, all of your html pages should be valid HTML5 ([html validator](http://validator.w3.org/)). Minor warnings about browser incompatibility are OK.
@@ -84,5 +84,4 @@ Turn the assignment into [Gradescope by Thursday, February 8th, 3:30 pm](https:/
 Fill out the [attribution attestation form for A1](https://docs.google.com/forms/d/e/1FAIpQLSdJ4T5zq5duVUQOW7RK4eYMy9Uxac5-QILbXu3fxl6e52f_Og/viewform?usp=sf_link)
 
 Using CSS frameworks like Bootstrap, Bulma, etc. counts as "incorporating code or content found on-line".
-
 
