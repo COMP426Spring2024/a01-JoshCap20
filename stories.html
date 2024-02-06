@@ -98,6 +98,21 @@
             who played a big part in the festivities of humans. He had many festivals and events done in his honor.
         </p>
     </div>
+    <div class="context">
+        <h2>References</h2>
+        <label for="references">See Zeus references: </label>
+        <select name="references" id="references">
+            <option value="rhapsodic">Rhapsodic Theogony</option>
+            <option value="illiad">Illiad</option>
+            <option value="bull">Bull</option>
+            <option value="oak">Oak</option>
+        </select>
+        <p id="referenceInfo">In the Orphic 'Rhapsodic Theogony' (first century BC/AD), Zeus wanted to marry his mother
+            Rhea. After Rhea refused to marry him, Zeus turned into a snake and raped her. Rhea became pregnant and gave
+            birth to Persephone. Zeus in the form of a snake would mate with his daughter Persephone, which resulted in
+            the
+            birth of Dionysus.</p>
+    </div>
     <div id="wivesAndChildren" class="context">
         <h2>First 6 Wives and Children</h2>
         <table>
@@ -129,8 +144,36 @@
                 <td>Demeter</td>
                 <td>Persephone</td>
             </tr>
-    
+
         </table>
     </div>
+    <script>
+        document.getElementById("references").addEventListener("change", function () {
+            var reference = document.getElementById("references").value;
+            var referenceInfo = document.getElementById("referenceInfo");
+            var description = "";
+            if (reference == "illiad") {
+                description = `The Iliad is an ancient Greek epic poem attributed to Homer about the Trojan war and the battle over the City of Troy, in which Zeus plays a major part.
+                                                                                    
+                    Scenes in which Zeus appears include:
+                    <ul>
+                    <li>Book 2: Zeus sends Agamemnon a dream and is able to partially control his decisions because of the effects of the dream</li>
+                    <li>Book 4: Zeus promises Hera to ultimately destroy the City of Troy at the end of the war</li>
+                    <li>Book 7: Zeus and Poseidon ruin the Achaeans fortress</li>
+                    <li>Book 8: Zeus prohibits the other Gods from fighting each other and has to return to Mount Ida where he can think over his decision that the Greeks will lose the war</li>
+                    <li>Book 14: Zeus is seduced by Hera and becomes distracted while she helps out the Greeks</li>
+                    <li>Book 15: Zeus wakes up and realizes that his own brother, Poseidon has been aiding the Greeks, while also sending Hector and Apollo to help fight the Trojans ensuring that the City of Troy will fall</li>
+                    <li>Book 16: Zeus is upset that he could not help save Sarpedon's life because it would then contradict his previous decisions</li>
+                    <li>Book 17: Zeus is emotionally hurt by the fate of Hector</li>
+                    <li>Book 20: Zeus lets the other Gods lend aid to their respective sides in the war</li>
+                    <li>Book 24: Zeus demands that Achilles release the corpse of Hector to be buried honourably"</li>
+                    <ul>`;
+            } else if (reference == "rhapsodic") {
+                description = "In the Orphic 'Rhapsodic Theogony' (first century BC/AD), Zeus wanted to marry his mother Rhea. After Rhea refused to marry him, Zeus turned into a snake and raped her. Rhea became pregnant and gave birth to Persephone. Zeus in the form of a snake would mate with his daughter Persephone, which resulted in the birth of Dionysus.";
+            }
+            referenceInfo.innerHTML = description
+        });
+    </script>
 
 </body>
+</html>
